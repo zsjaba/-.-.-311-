@@ -56,19 +56,28 @@ else:
 
 #4
 
+b = int(input())
 def is_year_leap (b):
   if b % 4 == 0:
     return True
   else:
     return False
+print (is_year_leap (b))
 
 #5
-
+n = int(input())
 def is_prime (n):
-  if n % n == 0 and n % 1 == 0:
-    return True
-  else:
+  if n % 2 == 0 and n != 2 and n != 0:
     return False
+  elif n % 3 == 0 and n != 3:
+    return False
+  elif n % 5 == 0 and n != 5:
+    return False
+  elif n % 7 == 0 and n != 7:
+    return False
+  else:
+    return True
+print (is_prime (n))
 
 #6
 
