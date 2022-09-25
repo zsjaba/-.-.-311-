@@ -114,4 +114,7 @@ a = int(input())
 b = int(input())
 c = int(input())
 o = ((a ** 2 + b ** 3) / c + 3) / 4
-print (o)
+if o % 2 == 0:
+  print (o," - четное")
+else:
+  print (o," - нечетное")
