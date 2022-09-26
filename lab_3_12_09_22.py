@@ -81,11 +81,10 @@ print (is_prime (n))
 
 #6
 
-from math import fabs
 a = int(input())
 b = int(input())
 print (a,b)
-if a / b > 3.6 or b > ((-138/2)**1.3 - 1) and b < (fabs(((-69/28**5.1)*4) + 1)):
+if a / b > 3.6 or (b > abs((-138/2)**1.3 ) and b < (abs(((-69/28**5.1)*4) + 1))):
   a,b = b,a
 print (a,b)
 
